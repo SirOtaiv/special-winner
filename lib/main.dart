@@ -30,9 +30,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  double calcularIMC(double peso, double altura) {
-    return peso / (altura * altura);
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -110,4 +107,8 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
+}
+
+double calcularIMC(double peso, double altura) {
+  return peso / (altura * altura);
 }
